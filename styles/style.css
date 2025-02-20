@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+header{
+    background-color: rgb(33, 33, 201);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    color: antiquewhite;
+}
+header a{
+    color: antiquewhite;
+}
+header div{
+    width: 3%;
+    height: 3%;
+}
+header img{
+    width: 100%;
+}
+footer{
+    background-color: rgb(33, 33, 201);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: antiquewhite;
+}
+footer a{
+    color: antiquewhite;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+
+}
+h1{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.personalizadoSection{
+    background-color: rgb(33, 33, 201);
+}
+.banner img{
+    padding-top: 5px;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.cards div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 1px solid;
+    background-color: rgb(33, 33, 201);
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.sale{
+    background-color: rgb(33, 33, 201);
+}
+.sale h2{
+    color: red;
+    text-align: center;
+    background-color: none;
+    font-family: "Bebas Neue", serif;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+h2{
+    background-color: rgb(33, 33, 201);
+    font-family: "Cormorant", serif;
+    text-align: center;
+    font-size: 1.5rem; 
+    color: antiquewhite;
+}
+.rutas{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rutas article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: black 1px solid;
+}
+.rutas img{
+    width: 100%;
+}
+.correccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rutas2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rutas2 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: black 1px solid;
+}
+.rutas2 img{
+    width: 100%;
+}
+.cards article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 1px solid;
+}
+main{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
