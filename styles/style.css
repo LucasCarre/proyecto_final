@@ -137,3 +137,32 @@ main{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+.cards_basicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards_basicos img{
+    width: 33%;
+}
+.basicos_uno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    
+}
+.basicos_dos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+    
+}
+.basicos_tres{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    
+}
