@@ -10,7 +10,7 @@
 </head>
 <body>
         <header>
-            <nav class="navbar navbar-expand-md navegacion">
+            <nav class="navbar navbar-expand-sm navegacion">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="./assets/letra-k-nav.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,21 +34,37 @@
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-light" type="submit">Buscar</button>
                         </form>
-                        <div class="perfiles">
-                            <a href="#"><img src="./assets/perfil.png" alt=""></a>  <!-- Boton para iniciar sesion o registrarse -->
-                        </div>
-                            
-                        <div class="perfiles">
-                            <a href="#"><img src="./assets/carrito-de-compras.png" alt=""> <!-- Boton carrito -->
-                        </div>
+                        <a class="navbar-brand" href="#"><img src="./assets/perfil.png" alt="Imagen que te permite entrar al menu de usuario"></a>
+                        <a class="navbar-brand" href="#"><img src="./assets/carrito-de-compras.png" alt="Imagen que te redirecciona al carrito de compras"></a>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="banner">
-                <a href="index.html"><img src="./assets/kachuda_logo.jpeg" alt=""></a> <!-- Imagen de banner -->
+            <div id="carouselExample" class="carousel slide banner">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/banner_prueba.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/banner_pruebados.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/banner_pruebatres.jpg" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <!-- <div class="banner">
+                <a href="index.html"><img src="./assets/kachuda_logo.jpeg" alt=""></a> <!-- Imagen de banner -->
+            </div> 
             <section class="sale">
                 <h2>SALE</h2> <!--Titulo de la seccion-->
                 <div class="cards flex-column flex-lg-row ">
@@ -123,7 +139,7 @@
                     <input type="button" value="Suscribirme">
                 </form>
             </div>
-            <div>
+            <div class="menu_footer">
                 <div class="btn-group dropup">
                     <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         Help & Info

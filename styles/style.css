@@ -11,6 +11,12 @@ header{
     align-items: center;
     color: white;
 }
+@media(max-width:375px){
+    header{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
 .dropdown-item{
     color: rgb(0, 0, 77);
 }
@@ -20,13 +26,6 @@ header{
 .boton:hover{
     color: rgb(0, 0, 77);
     background-color: white;
-}
-.perfiles{
-    width: 3%;
-    height: 3%;
-}
-.perfiles img{
-    width: 100%;
 }
 .navegacion{
     width: 100%;
@@ -79,9 +78,8 @@ h1{
     font-size: 1.5rem;
 }
 .banner img{
-    padding-top: 5px;
-    padding-bottom: 1px;
     width: 100%;
+    height: auto;
 }
 
 .cards div{
@@ -244,7 +242,23 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "uno uno"
+    "uno dos"
+    "dos uno"
+    "dos dos";
     gap: 50px;
+}
+@media (max-width:375px){
+    .conteiner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media(max-width:500px){
+    footer div{
+        flex-direction: column;
+    }
 }
 .griditem{
     border: skyblue 1px solid;
