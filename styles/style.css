@@ -76,6 +76,7 @@ h1{
     text-align: center;
     color: antiquewhite;
     font-size: 1.5rem;
+    width: 100%;
 }
 .banner img{
     width: 100%;
@@ -141,9 +142,26 @@ h2{
 }
 
 .rutas2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "uno"
+    "dos"
+    "tres"
+    "cuatro";;
+}
+.gridarea_uno{
+    grid-area: "uno";
+}
+.gridarea_dos{
+    grid-area: "dos";
+}
+.gridarea_tres{
+    grid-area: "tres";
+}
+.gridarea_cuatro{
+    grid-area: "cuatro";
 }
 .rutas2 article{
     display: flex;
@@ -167,48 +185,26 @@ main{
     padding-top: 5px;
 }
 .cards_basicos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.cards_basicos div{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.gridareabasicos_uno{
+    grid-area: 1/1;
+}
+.gridareabasicos_dos{
+    grid-area: 2/2;
+}
+.gridareabasicos_tres{
+    grid-area: 3/1;
 }
 .cards_basicos img{
-    width: 33%;
-    border: skyblue 1px solid;
-}
-.basicos_uno{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.basicos_uno div{
-    width: 33%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-}
-.basicos_dos{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.basicos_dos div{
-    width: 33%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-}
-.basicos_tres{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-.basicos_tres div{
-    width: 33%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    width: 100%;
 }
 .cards_conjuntos{
     display: flex;
@@ -216,7 +212,6 @@ main{
     justify-content: space-between;
 }
 .cards_conjuntos article{
-    width: 20%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -224,15 +219,18 @@ main{
     border: skyblue 1px solid;
 }
 .cards_conjuntos img{
-    width: 70%;
+    width: 100%;
 }
 .conjuntos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 10px;
+}
+.conjuntos img{
+    width: 100%;
 }
 .conjuntos article{
-    width: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -253,6 +251,57 @@ main{
     .conteiner{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+    .rutas2{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+    }
+    .rutas2 article{
+        width: 100%;
+        margin: 0;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards_basicos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .gridareabasicos_uno{
+        grid-area: 1/1;
+    }
+    .gridareabasicos_dos{
+        grid-area: 2/1;
+    }
+    .gridareabasicos_tres{
+        grid-area: 3/1;
+    }
+    .conjuntos article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: skyblue 1px solid;
+    }
+    .cards_conjuntos{
+        flex-direction: column;
+    }
+    .cards_conjuntos article{
+        flex-direction: row;
+    }
+    .personalizadoSection{
+        font-size: 1rem;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media(max-width:500px){
@@ -280,13 +329,11 @@ main{
 .boxes{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 .boxes article{
-    width: 40%;
     text-align: center;
     border: skyblue 1px solid;
-    margin: 2%;
 }
 .boxes img{
     width: 100%;
