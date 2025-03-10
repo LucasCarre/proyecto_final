@@ -11,21 +11,24 @@ header{
     align-items: center;
     color: white;
 }
+.navegacion a{
+    color: white;
+}
+.navegacion a:hover{
+    font-size: 1.2rem;
+    color: white;
+}
 @media(max-width:375px){
     header{
         flex-direction: row;
         justify-content: flex-start;
     }
 }
-.dropdown-item{
-    color: rgb(0, 0, 77);
-}
 .boton{
     color: white;
 }
 .boton:hover{
-    color: rgb(0, 0, 77);
-    background-color: white;
+    font-size: 1rem;
 }
 .navegacion{
     width: 100%;
