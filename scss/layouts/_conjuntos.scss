@@ -1,0 +1,41 @@
+// Cards
+.cards_conjuntos{
+    @include flexrowspb;
+}
+.cards_conjuntos article{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    border: $borde_celeste 1px solid;
+}
+.cards_conjuntos img{
+    width: 100%;
+}
+.conjuntos article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: $borde_celeste 1px solid;
+}
+// Section
+.conjuntos{
+    @include flexrowspb;
+    margin: 10px;
+}
+.conjuntos img{
+    width: 100%;
+}
+
+// Mediaqueries
+
+@media(max-width:375px){
+    .conjuntos{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .cards_conjuntos{
+        @include flexcolumncenter
+    }
+}

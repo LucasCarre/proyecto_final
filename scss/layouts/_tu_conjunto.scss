@@ -1,0 +1,34 @@
+// Section
+.personalizadoSection{
+    background-color: $fondo_sale;
+    font-family: $fuente_textos;
+    font-style: normal;
+    text-align: center;
+    color: $blanco_textos;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boxes article{
+    text-align: center;
+    border: skyblue 1px solid;
+}
+.boxes img{
+    width: 100%;
+}
+
+// Mediaqueries
+
+@media(max-width:375px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .personalizadoSection{
+        font-size: 1rem;
+    }
+}

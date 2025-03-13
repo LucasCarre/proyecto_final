@@ -1,0 +1,26 @@
+// Variables colores
+$fondo_azul:#052A59;
+$fondo_sale: #1C66A6;
+$fondo_gris: #4B81C0;
+$borde_celeste:#419BBF;
+$color_boton:#165F8C;
+
+// Variables fuentes
+$fuente_titulos: "Bebas Neue" , serif;
+$fuente_textos: "Montserrat", serif;
+$color_fuente_sale: red;
+$color_fuente_textos: black;
+$blanco_textos: white;
+
+// Mixins
+
+@mixin flexrowspb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin flexcolumncenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

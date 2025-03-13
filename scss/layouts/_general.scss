@@ -1,0 +1,118 @@
+// Header
+header{
+    background-color:$fondo_azul;
+}
+.navegacion a{
+    color: white;
+}
+.navegacion a:hover{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: underline;
+}
+.navegacion{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+// Main
+
+main{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+// Footer
+
+footer{
+    width: 100%;
+    background-color:$fondo_azul;
+    @include flexrowspb;
+    align-items: center;
+    color: white;
+}
+.footer_menu a{
+    color:$fondo_azul;
+}
+footer label{
+    color: white;
+}
+.footer_menu li:hover{
+    background-color: darkgrey;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+
+a{
+    color: $color_fuente_textos;
+    text-decoration: none;
+    font-family: $fuente_textos;
+}
+
+// Sale
+.sale{
+    background-color: $fondo_sale;
+    padding-bottom: 20px;
+}
+h1{
+    color: $color_fuente_sale;
+    text-align: center;
+    background-color: none;
+    font-family: $fuente_titulos;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+// Cards
+.cards article{
+    @include flexcolumncenter;
+    border: $color_fuente_textos 1px solid;
+}
+.cards div{
+    @include flexcolumncenter;
+}
+.cards{
+    @include flexrowspb;
+}
+.cards h2{
+    text-align: center;
+    padding: 10px;
+}
+.cards a:hover{
+    color: $color_fuente_textos;
+    background-color: $fondo_gris;
+    font-size: 1rem;
+
+}
+.boton_azul{
+    background-color: $fondo_azul;
+    color: $blanco_textos;
+}
+.boton_azul:hover{
+    background-color: $fondo_gris;
+    color: $fondo_azul ;
+}
+
+// Grid item
+
+.griditem{
+    border: $borde_celeste 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+// Mediaqueries
+
+@media(max-width:375px){
+    //Footer
+    .menu_footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

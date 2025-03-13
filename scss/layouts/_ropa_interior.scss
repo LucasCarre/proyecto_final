@@ -1,0 +1,67 @@
+// General
+
+h2{
+    background-color: $fondo_sale;
+    font-family: $fuente_textos;
+    text-align: center;
+    font-size: 1.5rem; 
+    color: $blanco_textos;
+}
+
+// Section
+
+.rutas2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "uno"
+    "dos"
+    "tres"
+    "cuatro";
+}
+.gridarea_uno{
+    grid-area: "uno";
+}
+.gridarea_dos{
+    grid-area: "dos";
+}
+.gridarea_tres{
+    grid-area: "tres";
+}
+.gridarea_cuatro{
+    grid-area: "cuatro";
+}
+.rutas2 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: black 1px solid;
+    margin: 50px;
+}
+.rutas2 img{
+    width: 100%;
+}
+.rutas2 h3:hover{
+    color: $color_fuente_textos;
+    background-color: $fondo_gris;
+    text-decoration: underline;
+}
+//Mediaqueries
+@media(max-width:375px){
+    .rutas2{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
