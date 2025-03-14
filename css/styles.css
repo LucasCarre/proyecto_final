@@ -1,5 +1,12 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.gridsubsecciones, .bombachas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
 header {
   background-color: #052A59;
 }
@@ -350,6 +357,82 @@ h2 {
   .conteiner {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+}
+.corpiños {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.corpiños div {
+  margin: 10px;
+}
+
+@media (max-width: 375px) {
+  .corpiños {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+.bombachas div {
+  margin: 10px;
+}
+
+@media (max-width: 375px) {
+  .bombachas {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+.packs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.packs div {
+  margin: 10px;
+}
+
+.gridareapack_uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gridareapack_dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gridareapack_tres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gridareapack_cuatro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bodies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.bodies div {
+  margin: 10px;
+}
+
+@media (max-width: 375px) {
+  .bodies {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 

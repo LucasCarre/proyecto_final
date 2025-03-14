@@ -1,0 +1,17 @@
+// Section
+.corpiños{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.corpiños div{
+    margin: 10px;
+}
+
+// Mediaqueries
+@media(max-width:375px){
+    .corpiños{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+}

@@ -1,0 +1,22 @@
+// Section
+
+.packs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.packs div{
+    margin:10px ;
+}
+.gridareapack_uno{
+    @include flexrowspb;
+}
+.gridareapack_dos{
+    @include flexrowspb;
+}
+.gridareapack_tres{
+    @include flexrowspb;
+}
+.gridareapack_cuatro{
+    @include flexrowspb;
+}

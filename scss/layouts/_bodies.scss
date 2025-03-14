@@ -1,0 +1,20 @@
+// Section
+
+.bodies{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.bodies div{
+    margin: 10px;
+}
+
+// Mediaqueries
+
+@media(max-width:375px){
+    .bodies{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
