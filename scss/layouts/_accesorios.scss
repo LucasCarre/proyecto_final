@@ -39,6 +39,14 @@
     width: 100%;
 }
 
+// Transformaciones
+
+.linear-gradient{
+    background-image: linear-gradient(to right, $fondo_sale, white);
+}
+.linear-gradient_dos{
+    background-image: linear-gradient(to left, $fondo_sale, white);
+}
 // Mediaqueries
 
 @media(max-width:375px){
