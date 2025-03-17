@@ -16,15 +16,27 @@
 }
 .gridareauno{
     grid-area: uno uno;
+    align-content: center;
+    background-color: $fondo_sale;
 }
 .gridareados{
     grid-area: uno dos;
+    align-content: center;
+    background-color: $fondo_sale;
 }
 .gridareatres{
     grid-area: dos uno;
+    align-content: center;
+    background-color: $fondo_sale;
 }
 .gridareacuatro{
     grid-area: dos dos;
+    align-content: center;
+    background-color: $fondo_sale;
+}
+
+.conteiner img{
+    width: 100%;
 }
 
 // Mediaqueries

@@ -88,6 +88,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   border: black 1px solid;
+  align-items: center;
 }
 
 .cards div {
@@ -121,6 +122,11 @@ h1 {
 .boton_azul:hover {
   background-color: #4B81C0;
   color: #052A59;
+}
+
+.cards img {
+  width: 90%;
+  height: auto;
 }
 
 .griditem {
@@ -171,7 +177,7 @@ h2 {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  border: black 1px solid;
+  border: none;
   margin: 50px;
 }
 
@@ -230,7 +236,7 @@ h2 {
 }
 
 .conjuntos img {
-  width: 100%;
+  width: 50%;
 }
 
 @media (max-width: 375px) {
@@ -271,7 +277,7 @@ h2 {
 }
 
 .cards_basicos img {
-  width: 100%;
+  width: 70%;
 }
 
 @media (max-width: 375px) {
@@ -311,7 +317,7 @@ h2 {
 }
 
 .boxes img {
-  width: 100%;
+  width: 90%;
 }
 
 @media (max-width: 375px) {
@@ -339,18 +345,30 @@ h2 {
 
 .gridareauno {
   grid-area: uno uno;
+  align-content: center;
+  background-color: #1C66A6;
 }
 
 .gridareados {
   grid-area: uno dos;
+  align-content: center;
+  background-color: #1C66A6;
 }
 
 .gridareatres {
   grid-area: dos uno;
+  align-content: center;
+  background-color: #1C66A6;
 }
 
 .gridareacuatro {
   grid-area: dos dos;
+  align-content: center;
+  background-color: #1C66A6;
+}
+
+.conteiner img {
+  width: 100%;
 }
 
 @media (max-width: 375px) {

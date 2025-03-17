@@ -73,6 +73,7 @@ h1{
 .cards article{
     @include flexcolumncenter;
     border: $color_fuente_textos 1px solid;
+    align-items: center;
 }
 .cards div{
     @include flexcolumncenter;
@@ -99,6 +100,10 @@ h1{
     color: $fondo_azul ;
 }
 
+.cards img{
+    width: 90%;
+    height: auto;
+}
 // Grid item
 
 .griditem{
