@@ -8,23 +8,32 @@
     padding: 10px;
     text-align: center;
     border: $borde_celeste 1px solid;
+    margin: 10px;
+    border-radius: 5px;
 }
 .cards_conjuntos img{
     width: 100%;
+    border-radius: 2px;
 }
 .conjuntos article{
     display: flex;
     flex-direction: row;
     align-items: center;
     border: $borde_celeste 1px solid;
+    margin: 30px;
+    border-radius: 5px;
 }
 // Section
 .conjuntos{
     @include flexrowspb;
-    margin: 10px;
 }
 .conjuntos img{
-    width: 50%;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.radial-gradient{
+    background-image: radial-gradient(circle,white, $fondo_sale)
 }
 
 // Mediaqueries
@@ -37,5 +46,38 @@
     }
     .cards_conjuntos{
         @include flexcolumncenter
+    }
+    .cards_conjuntos img{
+        width: 50%;
+    }
+    .conjuntos img{
+        width: 50%;
+        height: 80%;
+    }
+}
+@media (min-width: 768px) {
+    .cards_conjuntos img{
+        width: 50%;
+    }
+    .conjuntos img{
+        width: 50%;
+        height: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .conjuntos{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .cards_conjuntos{
+        @include flexcolumncenter
+    }
+    .cards_conjuntos img{
+        width: 50%;
+    }
+    .conjuntos img{
+        width: 50%;
+        height: 80%;
     }
 }

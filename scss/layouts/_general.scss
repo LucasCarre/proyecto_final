@@ -16,13 +16,25 @@ header{
 .banner img{
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
-
+.imagenes_banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner div a:hover{
+    text-decoration: underline;
+}
+.texto_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 // Main
 
 main{
     padding-bottom: 5px;
-    padding-top: 5px;
 }
 
 // Footer
@@ -57,8 +69,8 @@ a{
 
 // Sale
 .sale{
-    background-color: $fondo_sale;
     padding-bottom: 20px;
+    margin-top: 5px;
 }
 h1{
     color: $color_fuente_sale;
@@ -74,6 +86,7 @@ h1{
     @include flexcolumncenter;
     border: $color_fuente_textos 1px solid;
     align-items: center;
+    margin: 15px;
 }
 .cards div{
     @include flexcolumncenter;
@@ -84,12 +97,6 @@ h1{
 .cards h2{
     text-align: center;
     padding: 10px;
-}
-.cards a:hover{
-    color: $color_fuente_textos;
-    background-color: $fondo_gris;
-    font-size: 1rem;
-
 }
 .boton_azul{
     background-color: $fondo_azul;
@@ -103,6 +110,27 @@ h1{
 .cards img{
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+// Cards Subsecciones
+.cards_subsecciones article{
+    @include flexcolumncenter;
+    align-items: center;
+    margin: 10px;
+}
+.cards_subsecciones{
+    @include flexrowspb;
+}
+.cards_subsecciones img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.cards_subsecciones a:hover{
+    color: $color_fuente_textos;
+    text-decoration: underline;
+    font-size: 1rem;
 }
 // Grid item
 
@@ -121,6 +149,48 @@ h1{
         flex-direction: column;
     }
     .cards{
+        flex-direction: column;
+    }
+    .cards_subsecciones{
+        flex-direction: column;
+    }
+    .banner img{
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .cards{ 
+        flex-direction: row;
+    }
+    .banner img{
+        width: 50%;
+    }
+    .cards img {
+        width: 60%;
+    }
+    .cards_subsecciones img{
+        width: 60%;
+    }
+
+}
+@media (max-width: 768px) {
+    .cards img {
+        width: 60%;
+    }
+    .cards_subsecciones img{
+        width: 60%;
+    }
+    .banner img{
+        width: 50%;
+    }
+    .menu_footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards_subsecciones{
         flex-direction: column;
     }
 }

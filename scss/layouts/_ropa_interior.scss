@@ -19,6 +19,7 @@ h2{
     "dos"
     "tres"
     "cuatro";
+    margin-bottom: 10px;
 }
 .gridarea_uno{
     grid-area: "uno";
@@ -36,16 +37,18 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
     margin: 50px;
 }
 .rutas2 img{
     width: 100%;
+    border-radius: 10px;
 }
 .rutas2 h3:hover{
-    color: $color_fuente_textos;
-    background-color: $fondo_gris;
+    color: $fondo_azul;
     text-decoration: underline;
 }
 //Mediaqueries
@@ -63,5 +66,23 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .rutas2 img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rutas2 img{
+        width: 50%;
+    }
+    .rutas2{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
     }
 }

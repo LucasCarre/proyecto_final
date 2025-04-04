@@ -57,4 +57,17 @@
     .linear-gradient_dos{
         background-image: linear-gradient(to right, $fondo_sale, white);
     }
+    .conteiner img{
+        width: 50%
+    }
+}
+@media (min-width: 768px) {
+    .conteiner img{
+        width: 50%
+    }
+}
+@media (max-width: 768px) {
+    .conteiner img{
+        width: 50%;
+    }
 }
