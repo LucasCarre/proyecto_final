@@ -23,12 +23,18 @@ header {
 
 .navegacion {
   width: 100%;
+  background-color: #052A59;
+}
+
+.banner {
+  background-color: #052A59;
 }
 
 .banner img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 .imagenes_banner {
@@ -41,14 +47,16 @@ header {
   text-decoration: underline;
 }
 
+.banner div a {
+  color: #D8F2F0;
+}
+
 .texto_banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-main {
-  padding-bottom: 5px;
+  color: #D8F2F0;
+  font-family: "Montserrat", serif;
 }
 
 footer {
@@ -88,6 +96,8 @@ a {
 .sale {
   padding-bottom: 20px;
   margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #8AABBF;
 }
 
 h1 {
@@ -96,16 +106,17 @@ h1 {
   background-color: none;
   font-family: "Bebas Neue", serif;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .cards article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: black 1px solid;
+  border: #8AABBF 1px solid;
   align-items: center;
   margin: 15px;
+  border-radius: 10px;
 }
 
 .cards div {
@@ -138,7 +149,7 @@ h1 {
 .cards img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  padding-top: 10px;
 }
 
 .cards_subsecciones article {
@@ -147,12 +158,18 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 10px;
+  background-color: #052A59;
 }
 
 .cards_subsecciones {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #052A59;
+}
+
+.cards_subsecciones a {
+  color: #D8F2F0;
 }
 
 .cards_subsecciones img {
@@ -162,7 +179,6 @@ h1 {
 }
 
 .cards_subsecciones a:hover {
-  color: black;
   text-decoration: underline;
   font-size: 1rem;
 }
@@ -224,7 +240,7 @@ h1 {
   }
 }
 h2 {
-  background-color: #1C66A6;
+  background-color: #8AABBF;
   font-family: "Montserrat", serif;
   text-align: center;
   font-size: 1.5rem;
@@ -264,6 +280,7 @@ h2 {
   border: 1px solid gray;
   border-radius: 5px;
   margin: 50px;
+  background-color: #8AABBF;
 }
 
 .rutas2 img {
@@ -340,10 +357,12 @@ h2 {
 .conjuntos img {
   width: 100%;
   border-radius: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .radial-gradient {
-  background-image: radial-gradient(circle, white, #1C66A6);
+  background-image: radial-gradient(circle, white, #8AABBF);
 }
 
 @media (max-width: 375px) {
@@ -397,6 +416,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  margin: 10px;
 }
 
 .cards_basicos div {
@@ -404,6 +424,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   text-align: center;
+  background-color: #8AABBF;
 }
 
 .gridareabasicos_uno {
@@ -468,7 +489,7 @@ h2 {
   }
 }
 .personalizadoSection {
-  background-color: #1C66A6;
+  background-color: #8AABBF;
   font-family: "Montserrat", serif;
   font-style: normal;
   text-align: center;
@@ -485,9 +506,10 @@ h2 {
 
 .boxes article {
   text-align: center;
-  border: skyblue 1px solid;
+  border: #8AABBF 1px solid;
   border-radius: 5px;
   margin: 40px;
+  background-color: #8AABBF;
 }
 
 .boxes img {
@@ -497,10 +519,6 @@ h2 {
 
 .boxes a:hover {
   text-decoration: underline;
-}
-
-.radial-gradient_dos {
-  background-image: radial-gradient(circle, #031520, #419BBF);
 }
 
 @media (max-width: 375px) {
@@ -535,6 +553,11 @@ h2 {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "uno uno" "uno dos" "dos uno" "dos dos";
   gap: 50px;
+  margin: 20px;
+}
+
+.conteiner article {
+  background-color: #8AABBF;
 }
 
 .griditem {
@@ -546,37 +569,25 @@ h2 {
 .gridareauno {
   grid-area: uno uno;
   align-content: center;
-  background-color: #1C66A6;
 }
 
 .gridareados {
   grid-area: uno dos;
   align-content: center;
-  background-color: #1C66A6;
 }
 
 .gridareatres {
   grid-area: dos uno;
   align-content: center;
-  background-color: #1C66A6;
 }
 
 .gridareacuatro {
   grid-area: dos dos;
   align-content: center;
-  background-color: #1C66A6;
 }
 
 .conteiner img {
   width: 100%;
-}
-
-.linear-gradient {
-  background-image: linear-gradient(to right, #1C66A6, white);
-}
-
-.linear-gradient_dos {
-  background-image: linear-gradient(to left, #1C66A6, white);
 }
 
 @media (max-width: 375px) {
@@ -585,7 +596,7 @@ h2 {
     grid-template-rows: repeat(4, 1fr);
   }
   .linear-gradient_dos {
-    background-image: linear-gradient(to right, #1C66A6, white);
+    background-image: linear-gradient(to right, #8AABBF, white);
   }
   .conteiner img {
     width: 50%;

@@ -12,11 +12,16 @@ header{
 }
 .navegacion{
     width: 100%;
+    background-color: $fondo_azul;
+}
+.banner{
+    background-color: $fondo_azul;
 }
 .banner img{
     width: 100%;
     height: auto;
     border-radius: 5px;
+    margin-top: 5px;
 }
 .imagenes_banner{
     display: flex;
@@ -26,17 +31,16 @@ header{
 .banner div a:hover{
     text-decoration: underline;
 }
+.banner div a{
+    color: $textos_banner;
+}
 .texto_banner{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $textos_banner;
+    font-family: $fuente_textos;
 }
-// Main
-
-main{
-    padding-bottom: 5px;
-}
-
 // Footer
 
 footer{
@@ -71,6 +75,8 @@ a{
 .sale{
     padding-bottom: 20px;
     margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: $fondo_sale;
 }
 h1{
     color: $color_fuente_sale;
@@ -78,15 +84,16 @@ h1{
     background-color: none;
     font-family: $fuente_titulos;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 // Cards
 .cards article{
     @include flexcolumncenter;
-    border: $color_fuente_textos 1px solid;
+    border: $fondo_sale 1px solid;
     align-items: center;
     margin: 15px;
+    border-radius: 10px;
 }
 .cards div{
     @include flexcolumncenter;
@@ -110,7 +117,7 @@ h1{
 .cards img{
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    padding-top: 10px; 
 }
 
 // Cards Subsecciones
@@ -118,9 +125,14 @@ h1{
     @include flexcolumncenter;
     align-items: center;
     margin: 10px;
+    background-color: $fondo_azul;
 }
 .cards_subsecciones{
     @include flexrowspb;
+    background-color: $fondo_azul;
+}
+.cards_subsecciones a{
+    color: $textos_banner;
 }
 .cards_subsecciones img{
     width: 100%;
@@ -128,7 +140,6 @@ h1{
     border-radius: 10px;
 }
 .cards_subsecciones a:hover{
-    color: $color_fuente_textos;
     text-decoration: underline;
     font-size: 1rem;
 }

@@ -15,9 +15,10 @@
 }
 .boxes article{
     text-align: center;
-    border: skyblue 1px solid;
+    border: $fondo_sale 1px solid;
     border-radius: 5px;
     margin: 40px;
+    background-color: $fondo_sale;
 }
 .boxes img{
     width: 100%;
@@ -28,9 +29,6 @@
     text-decoration: underline;
 }
 
-.radial-gradient_dos{
-    background-image: radial-gradient(circle,$textos_banner, $borde_celeste)
-}
 // Mediaqueries
 
 @media(max-width:375px){
