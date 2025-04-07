@@ -27,8 +27,11 @@
 
 .boxes a:hover{
     text-decoration: underline;
+    color: $blanco_textos;
 }
-
+.h3_per{
+    color: $blanco_textos;
+}
 // Mediaqueries
 
 @media(max-width:375px){

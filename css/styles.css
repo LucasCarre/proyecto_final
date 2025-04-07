@@ -26,6 +26,11 @@ header {
   background-color: #052A59;
 }
 
+.navbar-toggler {
+  background-color: #D8F2F0;
+  color: #052A59;
+}
+
 .banner {
   background-color: #052A59;
 }
@@ -361,6 +366,10 @@ h2 {
   padding-left: 10px;
 }
 
+.conjuntos h3:hover {
+  text-decoration: underline;
+}
+
 .radial-gradient {
   background-image: radial-gradient(circle, white, #8AABBF);
 }
@@ -447,6 +456,10 @@ h2 {
   border-radius: 10px;
 }
 
+.h3_bas {
+  color: white;
+}
+
 @media (max-width: 375px) {
   .cards_basicos {
     grid-template-columns: repeat(1, 1fr);
@@ -519,6 +532,11 @@ h2 {
 
 .boxes a:hover {
   text-decoration: underline;
+  color: white;
+}
+
+.h3_per {
+  color: white;
 }
 
 @media (max-width: 375px) {
@@ -588,6 +606,10 @@ h2 {
 
 .conteiner img {
   width: 100%;
+}
+
+.h3_acc {
+  color: white;
 }
 
 @media (max-width: 375px) {
