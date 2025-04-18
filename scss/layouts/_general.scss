@@ -27,23 +27,11 @@ header{
     border-radius: 5px;
     margin-top: 5px;
 }
-.imagenes_banner{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .banner div a:hover{
     text-decoration: underline;
 }
 .banner div a{
     color: $textos_banner;
-}
-.texto_banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $textos_banner;
-    font-family: $fuente_textos;
 }
 // Footer
 
@@ -181,7 +169,7 @@ h1{
         flex-direction: row;
     }
     .banner img{
-        width: 50%;
+        width: 100%;
     }
     .cards img {
         width: 60%;
@@ -199,7 +187,7 @@ h1{
         width: 60%;
     }
     .banner img{
-        width: 50%;
+        width: 100%;
     }
     .menu_footer{
         display: flex;

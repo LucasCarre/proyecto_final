@@ -42,26 +42,12 @@ header {
   margin-top: 5px;
 }
 
-.imagenes_banner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .banner div a:hover {
   text-decoration: underline;
 }
 
 .banner div a {
   color: #D8F2F0;
-}
-
-.texto_banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #D8F2F0;
-  font-family: "Montserrat", serif;
 }
 
 footer {
@@ -217,7 +203,7 @@ h1 {
     flex-direction: row;
   }
   .banner img {
-    width: 50%;
+    width: 100%;
   }
   .cards img {
     width: 60%;
@@ -234,7 +220,7 @@ h1 {
     width: 60%;
   }
   .banner img {
-    width: 50%;
+    width: 100%;
   }
   .menu_footer {
     display: flex;
